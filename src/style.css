@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #00171f;
+}
+
+/* Navbar */
+  .mobile-menu,
+  .mob-menu-container,
+  .mob-menu-wrap {
+    display: none;
+  }
+
+  .navbar {
+    background-color: #00171F;
+    color: #007EA7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24); /* Add a shadow here */
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .bar {
+    width: 20px;
+    height: 3px;
+    background-color: #007EA7;
+    margin: 3px 0;
+  }
+
+
+
+  .close i {
+    padding: 10px 10px;
+    color: #007EA7;
+    font-size:large;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: #007EA7;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .menu-sec ul.nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .menu-sec ul li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+
+  .menu-sec ul li a {
+    text-decoration: none;
+    color: #007EA7;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 6px 6px;
+  }
+
+  .menu-sec ul li a.active {                    
+    color: #00171F !important;
+    padding: 6px 6px;
+    border-radius: 8px;
+    background-color: #007EA7;
+  }
+
+  .menu-sec ul li a:hover {
+    color: #00171F !important;
+    padding: 6px 6px;
+    border-radius: 8px;
+    background-color: #007EA7;
+  }
+
+.social-icons i {
+  font-size: 19px;
+  margin: 0 9px;
+}
+
+.social-icons i:hover {
+  color: #ff6656;
+  cursor: pointer;
+}
+
+.body-content {
+  height: 88vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title0  {
+  color: #C4EBC8;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title0 i {
+    
+  font-size:100px;
+
+
+}
+
+.site-footer {
+  background-color: #003459;
+  color: #fff;
+  padding: 20px 0;
+  padding-bottom: 5px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+/* Style the footer content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height:5px;
+  font-weight: bold;
+  height: 100%; /* Ensure the content takes up the full height of the footer */
+}
+
+/* Style the footer links */
+.footer-content ul {
+  list-style: none;
+  display: block;
+  
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+
+
+.footer-content li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+}
+
+/* Mobile Responsiveness CSS */
+@media only screen and (max-width: 650px) {
+  .desktop-menu {
+    display: none;
+  }
+  .mob-menu-container,
+  .mob-menu-wrap {
+    display: none;
+  }
+  .displayon {
+    display: block;
+  }
+  .mobile-menu {
+    background-color: #00171F;
+    color: #007EA7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24); /* Add a shadow here */
+  }
+  .mobile-menu .logo img {
+    width: 110px;
+    margin-top: 3px;
+  }
+  .mobile-menu button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-transform: uppercase;
+  }
+  .mob-menu-container {
+    background-color: #00171F;
+    position: fixed;
+    /*z-index: 1;*/
+    width: 100%;
+    height: 100%;
+  }
+  .mob-menu-container img {
+    width: 50px;
+    position: fixed;
+    /*z-index: 3;*/
+    top: 22px;
+    left: 28px;
+    cursor: pointer;
+  }
+  .mob-menu-wrap {
+    width: 100%;
+    background-color: #00171F;
+    -webkit-box-shadow: -2px 0 10px 2px rgba(33, 33, 33, 0.045);
+            box-shadow: -2px 0 10px 2px rgba(33, 33, 33, 0.045);
+    /*z-index: 2;*/
+    height: 100%;
+    position: fixed;
+    right: 0;
+    -webkit-transition: linear 3s;
+    transition: linear 3s;
+  }
+  .mob-menu-wrap .menu-content {
+    background-color: #00171F;
+    color: #007EA7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24); /* Add a shadow here */
+  }
+  .mob-menu-wrap .menu-content .menu-items {
+    margin-top: 40px;
+    z-index:3;
+  }
+  .mob-menu-wrap .menu-content .menu-items ul {
+    padding: 0;
+    text-align: center;
+  }
+  .mob-menu-wrap .menu-content .menu-items ul li {
+    list-style-type: none;
+    margin: 15px 0;
+    width: 100%;
+  }
+  .mob-menu-wrap .menu-content .menu-items ul li a {
+    text-decoration: none;
+    color: #007EA7;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    padding: 6px 6px;
+    width: 100%;
+  }
+  .mob-menu-wrap .menu-content .menu-items ul li a.active {
+    color: #00171F !important;
+    padding: 6px 6px;
+    border-radius: 8px;
+    background-color: #007EA7;
+  }
+  .mob-menu-wrap .menu-content .menu-items ul li a:hover {
+    color: #00171F !important;
+    padding: 6px 6px;
+    border-radius: 8px;
+    background-color: #007EA7;
+  }
+
+  .mob-menu-wrap .menu-content .social-items {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .body-content {
+    height: calc(100vh - 135px);
+  }
+  .footer p {
+    font-size: 13px;
+    z-index: -1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
