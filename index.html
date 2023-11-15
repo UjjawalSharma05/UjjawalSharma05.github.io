@@ -1,100 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ujjawal's Website</title>
-    <link rel="icon" href="src/favicon.png" type="image/png" sizes="16x16" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="src/style.css" />
-  </head>
-  <body>
-    <div class="navbar desktop-menu">
-      <div class="logo">
-        <a href="index.html">UJJAWAL</a>
-      </div>
-      <div id="menuSection" class="menu-sec">
-        <ul class="nav-menu">
-          <li><a class="active" href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="dev.html">PROJECTS</a></li>
-          <li><a href="dev.html">CONTACTS</a></li>
-        </ul>
-      </div>
-      
-    </div>
-    <!--<div onclick="closeMobMenuToggle()"id="mobMenuCont"class="mob-menu-container">
-      <div class="close">
-        <img src="src/close_1.png">
-      </div>
-    </div>-->
-    <div id="mobMenuWrap" class="mob-menu-wrap">
-      <div class="menu-content">
-        <div onclick="closeMobMenuToggle()"id="mobMenuCont"class="mob-menu-container">
-          <div class="close">
-            
-          </div>
+    <head>
+        <!-- External Files -->
+        <link rel="stylesheet" href="src/master.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="text/javascript" src="src/master.js"></script>
+        
+        <!-- Site Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+        <link rel="manifest" href="src/favicon/site.webmanifest">
+
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Homepage of Ujjawal's personal website">
+        <meta name="keywords" content="Portfolio, Ujjawal Sharma, Microcontrollers, Arduino, Raspberry Pi, ESP, Electronics">
+        <meta name="author" content="Ujjawal Sharma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title -->
+        <title>
+            Ujjawal's Website
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">Ujjawal</a>
+            </div>
+            <div class="links-desktop">
+                <ul class="links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-button">
+                <button onclick="menuToggle()" class="menu-button" id="btn">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
         </div>
-        <div class="menu-items">
-          <ul class="nav-menu">
-            <li><a class="active" href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="dev.html">PROJECTS</a></li>
-            <li><a href="dev.html">CONTACTS</a></li>
-          </ul>
+        <div class="header0">
+            <div class="logo">
+                <a href="index.html">Ujjawal</a>
+            </div>
+            <div class="links-desktop">
+                <ul class="links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-button">
+                <button onclick="menuToggle()" class="menu-button" id="btn">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
         </div>
-        
+        <div class="links-mobile" id="link-menu">
+            <ul class="links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
         </div>
-      </div>
-    </div>
-    <div class="mobile-menu">
-      <div class="logo">
-        <a href="index.html">UJJAWAL</a>
-      </div>
-      <button onclick="mobMenuToggle()" class="menu" id="btn">
-        <img src="src/menu.png" width="32" height="32">
-      </button>
-    </div>
-  
-    <div class="body-content">
-      <div class="set0">
-      <div class="text0">
-        <h1>HI</h1>
-        
-        <h1>I AM <span class="highlight">UJJAWAL</span></h1>
-        
-        <p>I am an Engineering Student<br><br></p>
-        
-        <a class="about_btn" href="about.html">About me</a>
-        
-      </div>
-      <div class="img0">
-        <img src="src/image.png" alt="Myself" height="500" width="500">
-      </div>
-      <!--<div class="title0">
-        <i class='bx bx-traffic-cone' style='color:#c4ebc8'  ></i>
-        <h1>THIS WEBSITE IS UNDER DEVELOPMENT</h1>
-        
-    </div>-->
-    </div>
-  </div>
-  
-    <div class="site-footer">
-      <div class="footer-content">
-          &copy; 2023 UJJAWAL SHARMA
-          <ul>
-              <li><a href="https://github.com/UjjawalSharma05"><i class='bx bxl-github'></i></a></li>
-              <li><a href="https://www.linkedin.com/in/ujjawal-sharma-29880b210/"><i class='bx bxl-linkedin'></i></a></li>
-              <li><a href="https://www.instagram.com/sharmaujjawal05/"><i class='bx bxl-instagram'></i></a></li>
-              <!--<li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>-->
-          </ul>
-      </div>
-    </div>
-  
-    <script type="text/javascript" src="src/script.js"></script>
-  </body>
+        <div class="content">
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </body>
 </html>
