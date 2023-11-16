@@ -162,11 +162,11 @@ body
     position: relative;
 }
 
-.mobile-button button span:hover
+/*.mobile-button button span:hover
 {
     color: var(--header-active-font-color);
     background-color: var(--header-active-bg-color);
-}
+}*/
 
 
 
@@ -182,12 +182,15 @@ body
 {
     background-color: var(--background-color);
     padding: 15px;
+    
+}
+
+.content-in
+{
     animation: fadeInContent ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
-
 
 .footer
 {
