@@ -21,7 +21,7 @@ body
 {
     font-family: var(--font-main), var(--font-main-type);
     color:var(--body-font-color);
-    background-color: var(--background-color);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -41,8 +41,9 @@ body
     top:0;
     left:0;
     right:0;
-    
+    background-color: var(--background-color);
     z-index: 5;
+    transition: width 2s, height 4s;
 }
 
 .top
@@ -56,8 +57,7 @@ body
 
 .header0
 {
-    color: var(--header-font-color);
-    box-shadow: 0px 4px 5px #00000080;
+    
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -151,6 +151,7 @@ body
     padding: 10px;
     border-radius: 8px;
     transition: all 0.15s;
+    position: relative;
 }
 
 .mobile-button button span:hover
@@ -159,18 +160,20 @@ body
     background-color: var(--header-active-bg-color);
 }
 
+
+
 .links-mobile
 {
-    display: none;
-    
-    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 5s ease-in-out;
+    opacity: 0;
 }
 
-.links-mobile.enable
+.content
 {
-    display: none;
-    justify-content: center;
-    text-align: center;
+    background-color: var(--background-color);
+    padding: 15px;
 }
 
 
@@ -194,7 +197,15 @@ body
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        
+        height: auto;
+        max-height: none;
+        opacity: 1;
+    }
+
+    .links-mobile div.links
+    {
+        height: 0px;
+        overflow: hidden;
     }
 
     .links-mobile.enable ul
@@ -208,7 +219,10 @@ body
 
     .links-mobile.enable div.links
     {
-        margin-top: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: auto;
+        overflow: visible;
     }
 
     .links-mobile.enable a
@@ -231,6 +245,12 @@ body
     }
 
     .links-mobile.enable a:hover
+    {
+        color: var(--header-active-font-color);
+        background-color: var(--header-active-bg-color);
+    }
+
+    .menu-button.enable span
     {
         color: var(--header-active-font-color);
         background-color: var(--header-active-bg-color);
