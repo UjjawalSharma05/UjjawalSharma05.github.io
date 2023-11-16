@@ -9,11 +9,13 @@
 
     --background-color: #091E49;
     --body-font-color: #9BAFD9;
+    --footer-color: #010B13;
 
     --header-font-color: #9BAFD9;
     --header-active-font-color: #091E49;
     --header-active-bg-color: #9BAFD9;
     
+    --highlight-color: #FF335F;
 }
 
 
@@ -21,12 +23,18 @@ body
 {
     font-family: var(--font-main), var(--font-main-type);
     color:var(--body-font-color);
-    background-color: #fff;
+    background-color: var(--footer-color);
     display: flex;
     flex-direction: column;
     margin: 0px;
     padding: 0px;
+
+    animation: fadeInBody ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+
 
 .header
 {
@@ -174,11 +182,79 @@ body
 {
     background-color: var(--background-color);
     padding: 15px;
+    animation: fadeInContent ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
+.content h1
+{
+    margin-bottom: 100rem;
+}
 
+.footer
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+}
 
+.footer div.foot-msg
+{
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+}
 
+.footer span.material-symbols-outlined
+{
+    font-size: 16px;
+}
+
+.footer span
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer span.name
+{
+    font-family: var(--font-title), var(--font-title-type);
+    font-size: 20px;
+    margin-right: 5px;
+    color: var(--highlight-color);
+}
+
+.footer a
+{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: var(--body-font-color)
+}
+
+.footer i
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.foot-links
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.foot-links a
+{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
 
 @media only screen and (max-width: 600px)
 {
@@ -255,4 +331,22 @@ body
         color: var(--header-active-font-color);
         background-color: var(--header-active-bg-color);
     }
+}
+ 
+@keyframes fadeInContent {
+    0% {
+        transform: translate3d(0, -2rem, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+     }
+}
+
+@keyframes fadeInBody {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+     }
 }
