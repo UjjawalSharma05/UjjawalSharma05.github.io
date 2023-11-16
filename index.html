@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script type="text/javascript" src="src/master.js"></script>
         
@@ -30,22 +31,28 @@
     </head>
     <body>
         <div class="header">
-            <div class="logo">
-                <a href="index.html">Ujjawal</a>
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html">Ujjawal</a>
+                </div>
+                <div class="links-desktop">
+                    <ul class="links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-button">
+                    <button onclick="menuToggle()" class="menu-button" id="btn">
+                        <!--<i class='bx bx-menu'></i>-->
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                </div>
             </div>
-            <div class="links-desktop">
-                <ul class="links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="mobile-button">
-                <button onclick="menuToggle()" class="menu-button" id="btn">
-                    <i class='bx bx-menu'></i>
-                </button>
-            </div>
+            
         </div>
         <div class="header0">
             <div class="logo">
@@ -66,12 +73,24 @@
             </div>
         </div>
         <div class="links-mobile" id="link-menu">
-            <ul class="links">
+            <div class="links">
+                <a href="index.html" class="active">Home</a>
+            </div>
+            <div class="links">
+                <a href="index.html">About</a>
+            </div>
+            <div class="links">
+                <a href="index.html">Projects</a>
+            </div>
+            <div class="links">
+                <a href="index.html">Contact</a>
+            </div>
+            <!--<ul class="links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="index.html">About</a></li>
                 <li><a href="index.html">Projects</a></li>
                 <li><a href="index.html">Contact</a></li>
-            </ul>
+            </ul>-->
         </div>
         <div class="content">
 
