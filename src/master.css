@@ -217,6 +217,17 @@ body
     border-color: var(--background-color);
 }
 
+.button a:visited
+{
+    text-decoration: none;
+    color: var(--body-font-color);
+    border-color: var(--body-font-color);
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 8px;
+}
+
 .footer
 {
     display:flex;
