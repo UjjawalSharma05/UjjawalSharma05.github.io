@@ -217,11 +217,6 @@ body
     border-color: var(--background-color);
 }
 
-.button a:visited
-{
-    
-}
-
 .footer
 {
     display:flex;
