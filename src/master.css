@@ -157,14 +157,6 @@ body
     position: relative;
 }
 
-/*.mobile-button button span:hover
-{
-    color: var(--header-active-font-color);
-    background-color: var(--header-active-bg-color);
-}*/
-
-
-
 .links-mobile
 {
     max-height: 0;
@@ -196,11 +188,21 @@ body
 {
     margin-top: 10px;
     margin-bottom: 10px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    
 }
 
 .button a
 {
     text-decoration: none;
+    color: var(--body-font-color);
+    border-color: var(--body-font-color);
     border-width: 2px;
     border-style: solid;
     padding: 5px;
