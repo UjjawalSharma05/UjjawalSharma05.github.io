@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- External Files -->
+        <link rel="stylesheet" href="src/master.css"> <!--Main CSS file for header and footer formating-->
+        <link rel="stylesheet" href="src/css/404.css"> <!--CSS file for page specific formating-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"> <!--Main font "Poppins"-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"> <!--Title font "Yellowtail"-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--Google Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> <!--Bootstrap icons-->
+        <script type="text/javascript" src="src/master.js"></script> <!--Main JavaScript file for header menu functions on mobile devices-->
+        
+        <!-- Site Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png"> <!--Icon for Safari Browser on Apple devices-->
+        <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png"> <!--Standard site icon 32 pixel by 32 pixel-->
+        <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png"> <!--Standard site icon 16 pixel by 16 pixel-->
+        <link rel="manifest" href="src/favicon/site.webmanifest"> <!--Manifest file for icons (automatically made by icon generator)-->
+
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Homepage of Ujjawal's personal website"> <!--Description to be showed in web search-->
+        <meta name="keywords" content="Portfolio, Ujjawal Sharma, Microcontrollers, Arduino, Raspberry Pi, ESP, Electronics"> <!--Keywords for search engines-->
+        <meta name="author" content="Ujjawal Sharma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Set zoom of webpage for browser-->
+
+        <!-- Title -->
+        <title>
+            Ujjawal's Website
+        </title>
+
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <div class="header">
+
+            <!--Top bar-->
+            <div class="top">
+
+                <!--Logo-->
+                <div class="logo">
+                    <a href="index.html">Ujjawal</a>
+                </div>
+
+                <!--Links On Desktop-->
+                <div class="links-desktop">
+
+                    <ul class="links"> <!--Add class="active" to active page-->
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!--Menu button visible on mobile devices-->
+                <div class="mobile-button">
+
+                    <!--menuToggle function from the javascript file is activated when the button is clicked-->
+                    <button onclick="menuToggle()" class="menu-button" id="btn">
+
+                        <span class="material-symbols-outlined" id="icon">
+                            menu
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!--Links to be displayed on mobile devices when menu button is clicked-->
+            <div class="links-mobile" id="link-menu"> <!--Add class="active" to active page-->
+
+                <div class="links">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="links">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="links">
+                    <a href="projects.html">Projects</a>
+                </div>
+
+                <div class="links">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Pseudo header (invisible)-->
+        <!--Pseudo header is used to leave the area occupied by the header to be empty-->
+        <!--Not doing so will result in the top of the content to be hidden below the header-->
+        <div class="header0">
+
+            <div class="top">
+
+                <div class="logo">
+                    <a href="index.html">Ujjawal</a>
+                </div>
+
+                <div class="links-desktop">
+
+                    <ul class="links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="mobile-button">
+
+                    <button onclick="menuToggle()" class="menu-button" id="btn">
+
+                        <span class="material-symbols-outlined" id="icon">
+                            menu
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <!--Content-->
+        <div class="content">
+
+            <!--This will contain items of content-->
+            <div class="content-items">
+
+                <h1><i class="bi bi-binoculars"></i> Error 404: Page not found</h1>
+                <p>
+                    The page you are looking for does not exist. This may be due to one of the following reasons :
+                    <ul>
+
+                        <li>The page was deleted by the owner.</li>
+                        <li>You may have entered an invalid address.</li>
+
+                    </ul>
+                    What can you do?
+                    <ul>
+
+                        <li>Contact the <a href="contact.html">owner of the website.</a></li>
+                        <li>Make sure you spelled the address correctly.</li>
+                        <li>Go back to the <a href="index.html">homepage.</a></li>
+
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+
+            <!--Footer message-->
+            <!--On desktops the message is displayed in one line but on mobile devices it is displayed in 2 lines-->
+            <div class="foot-msg">
+
+                <!--Line 1 of Message-->
+                <div class="line1">
+                    <i class="bi bi-c-circle"></i>2023<span class="name">Ujjawal Sharma</span>
+                </div>
+
+                <!--Spacer between lines-->
+                <div class="spacer">
+                    <i class="bi bi-circle-fill"></i>
+                </div>
+
+                <!--Line 2 of Message-->
+                <div class="line2">
+                    </i>Hosted on <a href="https://pages.github.com">Github Pages</a>
+                </div>
+
+            </div>
+
+            <!--Links to differnt social medias to be displayed in the footer-->
+            <div class="foot-links">
+
+                <a href="https://github.com/UjjawalSharma05"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/ujjawal-sharma-29880b210/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/sharmaujjawal05/"><i class="bi bi-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

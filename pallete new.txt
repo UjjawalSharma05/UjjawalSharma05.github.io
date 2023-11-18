@@ -4,3 +4,6 @@ rich black
 #010B13
 
 https://coolors.co/gradient-maker/9bafd9-103783?position=0,100&opacity=100,100&type=linear&rotation=45
+
+https://coolors.co/5673ae-696ca5-7c659c-8e5e94-a1578b-b44f82-c74879-d94171-ec3a68-ff335f
+#AB5387
